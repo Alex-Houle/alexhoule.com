@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;    /* center vertically */
+}
+.centered-div {
+  text-align: center;
+  font-size: 70px;
+  border-radius: 10px;
+}
