@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chess.css">
+    <link rel="stylesheet" href="piece.css">
+    <title>CHESS</title>
+</head>
+<body class="lightmode">
+    <h1>CHESS ALEX</h1>
+
+    <!-- The Chess Board -->
+    <div class="board"></div>
+
+    <!-- Dark/Light Mode Button -->
+    <div>
+        <button id="darkButton" onclick="toggleMode()">☀</button>
+    </div>
+    
+    <!-- FEN input form -->
+    <div>
+        <label for="fenInput">Enter FEN string:</label>
+        <input type="text" id="fenInput" placeholder="Enter FEN here" value="rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1">
+        <button id="loadFenButton">Load FEN</button>
+    </div>
+
+    <!-- Your JavaScript at the bottom -->
+    <script src="chess.js"></script>
+
+    <!-- After chess.js is loaded, THEN call initBoard -->
+    <script>
+        initBoard(); // Now it's safe to call it!
+    </script>
+</body>
+</html>

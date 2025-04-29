@@ -1,0 +1,54 @@
+.piece {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.black-bishop {
+    background-image: url('pic/Chess_bdt60.png');
+}
+
+.black-king {
+    background-image: url('pic/Chess_kdt60.png');
+}
+
+.black-knight {
+    background-image: url('pic/Chess_ndt60.png');
+}
+
+.black-pawn {
+    background-image: url('pic/Chess_pdt60.png');
+}
+
+.black-queen {
+    background-image: url('pic/Chess_qdt60.png');
+}
+
+.black-rook {
+    background-image: url('pic/Chess_rdt60.png');
+}
+
+/* White (light) pieces */
+.white-bishop {
+    background-image: url('pic/Chess_blt60.png');
+}
+
+.white-king {
+    background-image: url('pic/Chess_klt60.png');
+}
+
+.white-knight {
+    background-image: url('pic/Chess_nlt60.png');
+}
+
+.white-pawn {
+    background-image: url('pic/Chess_plt60.png');
+}
+
+.white-queen {
+    background-image: url('pic/Chess_qlt60.png');
+}
+
+.white-rook {
+    background-image: url('pic/Chess_rlt60.png');
+}
