@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Houle — Software Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    const storedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
+</head>
+<body>
+ <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">☾</button>
+  <div id="hero"></div>
+ 
+  <section id="experience"></section>
+  <section id="projects"></section>
+  <section id="skills"></section>
+  <section id="education"></section>
+  <section id="achievements"></section>
+ 
+  <footer id="footer"></footer>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
+ 
