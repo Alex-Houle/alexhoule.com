@@ -5,8 +5,8 @@
   "email": "alexhoule415@gmail.com",
   "website": "alexhoule.com",
   "github": "github.com/Alex-Houle",
-  "tagline": "Building systems from the ground up.",
-  "about": "Computer Science student at UNH with a focus on systems programming, cybersecurity, and low-level software. Eagle Scout. Currently shipping projects in C, Go, and Python.",
+  "tagline": "",
+  "about": "Computer Science student at UNH.",
   "education": [
     {
       "school": "University of New Hampshire",
@@ -21,6 +21,16 @@
     }
   ],
   "experience": [
+        {
+      "role": "Test Technician",
+      "org": "UNH Interoperability Labs",
+      "location": "Durham, NH",
+      "period": "May 2025 - present",
+      "bullets": [
+        "Used strong debugging skills to isolate and fix issues in switch performance, tracing problems across hardware behavior, firmware, and network communication",
+        "Assisted in interoperability testing to ensure switches functioned correctly with multi-vendor hardware"
+      ]
+    },
     {
       "role": "IT Support Technician",
       "org": "University System of New Hampshire",
@@ -31,35 +41,11 @@
         "Diagnose and resolve incidents across Windows, macOS, and Linux systems.",
         "Collaborate with system administrators to escalate complex issues and improve efficiency through documentation and automation."
       ]
-    },
-    {
-      "role": "Test Technician",
-      "org": "UNH Interoperability Labs",
-      "location": "Durham, NH",
-      "period": "May 2026 - present",
-      "bullets": [
-        "Used strong debugging skills to isolate and fix issues in switch performance, tracing problems across hardware behavior, firmware, and network communication",
-        "Assisted in interoperability testing to ensure switches functioned correctly with multi-vendor hardware"
-      ]
     }
+
   ],
   "projects": [
-    {
-      "name": "Chess Engine",
-      "link": "https://github.com/Alex-Houle/Chess",
-      "tags": [
-        "C",
-        "Bitboards",
-        "Systems Programming"
-      ],
-      "period": "2024 \u2013 2025",
-      "bullets": [
-        "Designed a high-performance chess engine using bitboards for efficient move generation and position evaluation.",
-        "Implemented minimax with alpha-beta pruning for search optimization.",
-        "Applied low-level memory management and performance profiling."
-      ]
-    },
-    {
+ {
       "name": "Compiler (In Progress)",
             "link": "https://github.com/Alex-Houle/TLA",
       "tags": [
@@ -75,7 +61,23 @@
         "Implemented a frontend pipeline to read and process source files into token streams.",
         "Planning and actively working toward parsing, abstract syntax tree (AST) generation, and code generation stages."
       ]
+    },
+    {
+      "name": "Chess Engine",
+      "link": "https://github.com/Alex-Houle/Chess",
+      "tags": [
+        "C",
+        "Bitboards",
+        "Systems Programming"
+      ],
+      "period": "2024 \u2013 2025",
+      "bullets": [
+        "Designed a high-performance chess engine using bitboards for efficient move generation and position evaluation.",
+        "Implemented minimax with alpha-beta pruning for search optimization.",
+        "Applied low-level memory management and performance profiling."
+      ]
     }
+   
   ],
   "skills": {
     "Languages": [
