@@ -86,10 +86,10 @@
       "Python",
       "JavaScript",
       "HTML/CSS",
-      "MongoDB"
+      "Go"
     ],
     "Frameworks & Tools": [
-      "Go",
+      "MongoDB",
       "Flask",
       "Linux",
       "Git",
