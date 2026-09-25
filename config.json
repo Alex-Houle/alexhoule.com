@@ -25,10 +25,12 @@
       "role": "Test Technician",
       "org": "UNH Interoperability Labs",
       "location": "Durham, NH",
-      "period": "May 2025 - present",
+      "period": "May 2026 - present",
       "bullets": [
-        "Used strong debugging skills to isolate and fix issues in switch performance, tracing problems across hardware behavior, firmware, and network communication",
-        "Assisted in interoperability testing to ensure switches functioned correctly with multi-vendor hardware"
+        "Executed conformance test plans for Time-Sensitive Networking protocols, standards IEEE 802.1AS, 802.1Q, and 802.1BA",
+        "Conducted multi-vendor interoperability testing on Layer 2 networking devices, identifying configuration issues to ensure seamless communication across networking equipmen",
+        "Performed Layer 2 MAC-level conformance testing against IEEE 802.3 standards, using packet capture tools to verify conformance",
+        "Performed high-speed InfiniBand interoperability testing across NICs, transceivers/DACs, and switche"
       ]
     },
     {
