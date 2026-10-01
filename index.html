@@ -4,7 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex Houle — Software Engineer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Alex Houle is a Computer Science student at the University of New Hampshire and a software engineer working on compilers, systems programming, and networking.">
+  <meta name="author" content="Alex Houle">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alex Houle — Software Engineer">
+  <meta property="og:description" content="Computer Science student at UNH. Compilers, systems programming, and networking.">
+  <meta property="og:url" content="https://alexhoule.com/">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#f9f8f6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231e4d8c'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23f9f8f6'%3EAH%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap">
+  <style>
+    /* Paint the right background before anything else loads, so a reload never flashes white */
+    html { background: #f9f8f6; color-scheme: light; }
+    html[data-theme="dark"] { background: #121212; color-scheme: dark; }
+  </style>
+  <link rel="stylesheet" href="/src/style.css">
   <script>
     const storedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -14,18 +32,12 @@
   </script>
 </head>
 <body>
- <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">☾</button>
-  <div id="hero"></div>
- 
-  <section id="experience"></section>
-  <section id="projects"></section>
-  <section id="skills"></section>
-  <section id="education"></section>
-  <section id="achievements"></section>
- 
-  <footer id="footer"></footer>
- 
-  <script src="script.js"></script>
+  <div id="root"></div>
+
+  <noscript>
+    <p class="noscript">This site needs JavaScript to load its content. You can reach me at <a href="mailto:alexhoule415@gmail.com">alexhoule415@gmail.com</a> or on <a href="https://github.com/Alex-Houle">GitHub</a>.</p>
+  </noscript>
+
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
- 
