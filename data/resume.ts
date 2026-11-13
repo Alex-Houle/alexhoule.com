@@ -80,9 +80,9 @@ export const profile = {
 
 export const contacts: ContactLink[] = [
   {
-    label: "email",
-    display: "alexhoule415@gmail.com",
-    href: "mailto:alexhoule415@gmail.com",
+    label: "linkedin",
+    display: "linkedin.com/in/alex-houle-53a4b9328",
+    href: "https://www.linkedin.com/in/alex-houle-53a4b9328",
   },
   {
     label: "git",
