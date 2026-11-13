@@ -1,0 +1,175 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Edited for Alex Houle
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Alex Houle} \\ \vspace{1pt}
+    \small  \href{mailto:alexhoule415@gmail.com}{\underline{alexhoule415@gmail.com}} $|$ 
+    \href{https://alexhoule.com}{\underline{alexhoule.com}} $|$
+    \href{https://github.com/Alex-Houle}{\underline{github.com/Alex-Houle}}
+\end{center}
+
+%-----------EDUCATION-----------
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of New Hampshire}{Durham, NH}
+      {Bachelor of Science in Computer Science}{Expected May 2028}
+    \resumeItemListStart
+      \resumeItem{\textbf{Relevant Coursework:} Data Structures \& Algorithms, Computer Networks, Operating Systems, Systems Programming. }
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+  {Test Technician}{March 2026 -- Present}
+  {UNH Interoperability Lab}{Durham, NH}
+  \resumeItemListStart
+    \resumeItem{Executed conformance test plans for Time-Sensitive Networking protocols, standards IEEE 802.1AS, 802.1Q, and 802.1BA.}
+    \resumeItem{Conducted multi-vendor interoperability testing on Layer 2 networking devices, identifying configuration issues to ensure seamless communication across networking equipment.}
+    \resumeItem{Performed Layer 2 MAC-level conformance testing against IEEE 802.3 standards, using packet capture tools to verify conformance.}
+   \resumeItem{Performed high-speed InfiniBand interoperability testing across NICs, transceivers/DACs, and switches.}
+  \resumeItemListEnd
+
+    \resumeSubheading
+      {Cybersecurity Team Member}{Sept 2024 -- Present}
+      {University Cybersecurity Club}{Durham, NH}
+      \resumeItemListStart
+
+        \resumeItem{Competed in the NECCDC, managing Linux infrastructure, Keycloak authentication services, and Gitea
+repositories while completing incident response tasks and operational injects under time constraints.}
+        \resumeItem{Collaborate with peers to analyze vulnerabilities, practice penetration testing, and strengthen overall security awareness.}
+        \resumeItem{Hardened Linux systems during attack-and-defense cybersecurity competitions, helping maintain service
+availability and improve team scoring.}
+
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Chess Engine} $|$ \emph{C, Bitboards, Systems Programming}}{March 2024 -- October 2025}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented a high-performance chess engine using bitboards for efficient move generation and position evaluation.}
+            \resumeItem{Implemented algorithms for move validation, game state evaluation, and search optimization (minimax, alpha-beta pruning).}
+            \resumeItem{Applied low-level systems programming concepts such as memory management, bit manipulation, and Performance Optimization.}
+          \resumeItemListEnd
+\resumeProjectHeading
+          {\textbf{OpnLaaS (Lab as a Service)} $|$ \emph{Go, Fiber, Proxmox API, Tailwind CSS}}{2025 -- 2025}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack orchestration platform for automated provisioning of virtual machines and containers.}
+            \resumeItem{Architected a scalable backend in Go using the Fiber framework to interface with Proxmox APIs for real-time resource management.}
+            \resumeItem{Built a responsive web dashboard with Tailwind CSS, enabling users to request, monitor, and manage isolated lab environments.}
+
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, Go, Java, Python, JavaScript, HTML/CSS} \\
+     \textbf{Frameworks/Tools}{: React, Fiber, Flask, Docker, Linux, Git, Tailwind CSS} \\
+    }}
+ \end{itemize}
+
+%-----------LEADERSHIP & ACHIEVEMENTS-----------
+\section{Leadership \& Achievements}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Eagle Scout, Boy Scouts of America}}{}
+      \resumeItemListStart
+        \resumeItem{Led a service project coordinating volunteers, resources, and logistics, demonstrating leadership, initiative, and project management skills.}
+        \resumeItem{Developed resilience, teamwork, and problem-solving through years of community service and outdoor leadership.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+%-----------COURSEWORK-----------
+%-----------COURSEWORK-----------
+
+\end{document}
