@@ -12,14 +12,14 @@ recombines verbatim resume facts (degree, employer, dates) and nothing more.
 
 ```bash
 npm install
-npm run dev        # dev server on http://localhost:20002/newSite/
+npm run dev        # dev server on http://localhost:20002/
 # or
-npm run build && npm start   # static export -> serve out/ -> http://localhost:20002/newSite/
+npm run build && npm start   # static export -> serve out/ -> http://localhost:20002/
 ```
 
 - Port **20002** is wired into the `dev` / `start` npm scripts.
-- Because the site deploys to GitHub Pages under the `/newSite` base path
-  (see [Deploy](#deploy---github-pages)), local URLs carry that prefix too.
+- The site deploys to the custom domain root (see [Deploy](#deploy---github-pages)),
+  so local URLs carry no base-path prefix.
 
 ## Deploy — GitHub Pages
 
@@ -28,11 +28,10 @@ with a GitHub Actions workflow at [`.github/workflows/deploy.yml`](.github/workf
 
 - On every push to `main` (or manual dispatch), the workflow runs `npm ci && npm run build`
   and deploys the `out/` folder to GitHub Pages.
-- Live URL: <https://alex-houle.github.io/newSite/>
+- Live URL: <https://alexhoule.com/>
 
-To point the site at a custom domain later (e.g. `alexhoule.com`), set the GitHub Pages
-custom domain, then adjust `basePath` in `next.config.ts` accordingly (empty string for a
-domain-root deployment).
+The site is served from the custom domain root (`alexhoule.com`). The `CNAME` file lives in
+the `public/` folder (Next.js copies it into the static export) and `basePath` is empty.
 
 ## Design
 
@@ -93,7 +92,7 @@ defines that primitive away and stubs the glyph-to-unicode map — no document c
 changed.
 
 If no engine is available at all, the site still works: point `resumeDownload.href` in
-`data/resume.ts` at `/newSite/resume.latex`.
+`data/resume.ts` at /resume.latex.
 
 ## Project layout
 
@@ -121,7 +120,7 @@ site-terminal/
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml     # GitHub Pages deploy (static export -> out/)
-├── next.config.ts          # output: "export", basePath: /newSite
+├── next.config.ts          # output: "export", basePath: ""
 └── start.sh               # build + serve the static export
 ```
 

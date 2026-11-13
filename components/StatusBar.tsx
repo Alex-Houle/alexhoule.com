@@ -7,14 +7,15 @@ import type { NavItem } from "@/data/resume";
  * tmux-style status bar pinned to the bottom of the terminal window.
  * The left side is section navigation; the right side is a local clock.
  *
- * `basePath` is the deployment base path (e.g. `/newSite` on GitHub Pages) and
- * is prefixed to every nav href, both in-page anchors (`/newSite/#about`) and
- * section routes (`/newSite/projects`). Links are plain anchors on purpose: the
- * hash-bearing hrefs above need full control over the final URL.
+ * `basePath` is the deployment base path (defaults to `/` for the custom-domain
+ * deployment at the domain root) and is prefixed to every nav href, both
+ * in-page anchors (`/#about`) and section routes (`/projects`). Links are plain
+ * anchors on purpose: the hash-bearing hrefs above need full control over the
+ * final URL.
  */
 export default function StatusBar({
   items,
-  basePath = "/newSite",
+  basePath = "/",
 }: {
   items: NavItem[];
   basePath?: string;
@@ -22,7 +23,7 @@ export default function StatusBar({
   const [active, setActive] = useState<string | null>(null);
   const [clock, setClock] = useState<string | null>(null);
 
-  // Normalize so in-page anchors become `/newSite/#about`, routes `/newSite/projects`.
+  // Normalize so in-page anchors become `/#about`, routes `/projects`.
   const normalizedBase = basePath.endsWith("/") ? basePath : `${basePath}/`;
   const hrefFor = (item: NavItem) =>
     item.href

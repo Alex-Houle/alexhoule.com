@@ -14,7 +14,7 @@ export default function ProjectsPage() {
   return (
     <>
       <a
-        href="/newSite/"
+        href="/"
         className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-1/2 focus:z-50 focus:-translate-x-1/2 focus:rounded-md focus:border focus:border-term-line focus:bg-term-head focus:px-3 focus:py-2 focus:text-xs focus:text-term-fg"
       >
         back to the resume
@@ -30,7 +30,7 @@ export default function ProjectsPage() {
             <span className="text-term-faint" aria-hidden="true">
               $
             </span>
-            <a href="/newSite/" className="term-cta text-base">
+            <a href="/" className="term-cta text-base">
               cd home
             </a>
           </p>

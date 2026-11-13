@@ -269,11 +269,11 @@ export const navItems: NavItem[] = [
  * secondary link.
  */
 export const resumeDownload = {
-  href: "/newSite/Alex_Houle_Resume.pdf",
+  href: "/Alex_Houle_Resume.pdf",
   filename: "Alex_Houle_Resume.pdf",
   /** Shown as a note under the button. */
   note: "PDF · 1 page · compiled from resume.latex with pdflatex",
-  sourceHref: "/newSite/resume.latex",
+  sourceHref: "/resume.latex",
   sourceLabel: "resume.latex",
   sourceNote: "view LaTeX source",
 };
