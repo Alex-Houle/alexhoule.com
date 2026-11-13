@@ -2,10 +2,13 @@
   "name": "site-terminal",
   "version": "0.1.0",
   "private": true,
+  "config": {
+    "port": "20002"
+  },
   "scripts": {
-    "dev": "next dev -p 20002",
+    "dev": "next dev -p $npm_package_config_port",
     "build": "next build",
-    "start": "npx serve out -l 20002"
+    "start": "npx serve out -l $npm_package_config_port"
   },
   "dependencies": {
     "next": "16.4.2",

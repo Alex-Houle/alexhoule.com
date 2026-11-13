@@ -12,12 +12,12 @@ recombines verbatim resume facts (degree, employer, dates) and nothing more.
 
 ```bash
 npm install
-npm run dev        # dev server on http://localhost:20002/
+npm run dev        # dev server (default http://localhost:20002/)
 # or
-npm run build && npm start   # static export -> serve out/ -> http://localhost:20002/
+npm run build && npm start   # static export -> serve out/
 ```
 
-- Port **20002** is wired into the `dev` / `start` npm scripts.
+- The local port is configured once in `package.json` (`config.port`, default **20002**) and reused by `npm run dev`, `npm start`, and `start.sh`.
 - The site deploys to the custom domain root (see [Deploy](#deploy---github-pages)),
   so local URLs carry no base-path prefix.
 
