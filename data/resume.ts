@@ -189,11 +189,11 @@ export const skills: Skill[] = [
  * `proto`, `port`, and `state` are decorative presentation columns only.
  */
 export const skillRows: SkillRow[] = [
-  { name: "C", group: "Languages", proto: "tcp", port: "8080", state: "ESTABLISHED" },
+  { name: "C", group: "Languages", proto: "tcp", port: "8081", state: "ESTABLISHED" },
   { name: "Go", group: "Languages", proto: "tcp", port: "8000", state: "ESTABLISHED" },
   { name: "Java", group: "Languages", proto: "tcp", port: "1099", state: "ESTABLISHED" },
-  { name: "Python", group: "Languages", proto: "tcp", port: "5000", state: "ESTABLISHED" },
-  { name: "JavaScript", group: "Languages", proto: "tcp", port: "3000", state: "ESTABLISHED" },
+  { name: "Python", group: "Languages", proto: "tcp", port: "5001", state: "ESTABLISHED" },
+  { name: "JavaScript", group: "Languages", proto: "tcp", port: "3001", state: "ESTABLISHED" },
   { name: "HTML/CSS", group: "Languages", proto: "tcp", port: "80", state: "LISTEN" },
   { name: "React", group: "Frameworks/Tools", proto: "tcp", port: "5173", state: "ESTABLISHED" },
   { name: "Fiber", group: "Frameworks/Tools", proto: "tcp", port: "3000", state: "LISTEN" },
